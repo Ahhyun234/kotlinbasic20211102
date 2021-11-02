@@ -5,50 +5,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
-<Button
-    android:id="@+id/btnLog"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="touch me"
-    android:textAllCaps="false"/>
-
-<Button
-    android:id="@+id/btnToast"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="토스트 띄우기"/>
-
-<Button
-    android:id="@+id/btnToast2"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="토스트 띄우기 2"/>
-
-    <EditText
-        android:id="@+id/edtContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="입력하세요"/>
-
-    <Button
-        android:id="@+id/btnCopyText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="위의 문장을 옮겨적기"/>
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal">
 
     <TextView
-        android:id="@+id/txtCopyResult"
-        android:layout_width="match_parent"
+        android:id="@+id/menu1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="입력한 문장이 복사될 자리"
-        android:gravity="center"
+        android:text="나의메뉴"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="혜택"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/menu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="금융"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/menu4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이벤트"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
         />
 
-    <Button
-        android:id="@+id/btnContentToast"
+    <ImageView
+        android:id="@+id/hamburger"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/hamburger"
+        />
+
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/black"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="입력한 내용을 토스트로 띄우기"/>
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="지문 로그인을 해주세요"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/jimun"/>
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지문 로그인"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FFFF00"/>
+
+
 </LinearLayout>
