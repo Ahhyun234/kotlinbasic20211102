@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             val inputID = edtID.text.toString()
             txtResult.text = inputID
-            Toast.makeText(this, inputID, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "성공", Toast.LENGTH_SHORT).show()
         }
         }
     }
