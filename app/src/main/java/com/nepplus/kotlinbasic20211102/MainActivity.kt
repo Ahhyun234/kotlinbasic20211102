@@ -30,7 +30,11 @@ class MainActivity : AppCompatActivity() {
             val inputcontent = edtContent.text.toString()
 //            2. 텍스트 뷰에 알아낸 내용을 세팅 -> apahgoens sodyddmf TXT의 속성에 대입
             txtCopyResult.text = inputcontent
+        btnContentToast.setOnClickListener {
+            val inputContent = edtContent.text.toString()
 
+            Toast.makeText(this, inputContent, Toast.LENGTH_SHORT).show()
+        }
 
         }
     }
