@@ -8,8 +8,10 @@
     android:orientation="vertical">
 
 <Button
+    android:id="@+id/btnLog"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="tauch me"/>
+    android:text="touch me"
+    android:textAllCaps="false"/>
 
 </LinearLayout>
