@@ -25,5 +25,13 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnCopyText.setOnClickListener {
+//            1. 입력칸에 어떤 내용이 적혀있는지? 컴퓨터에게 메모시키자 ->변수를 만들고 값을 담아두자
+            val inputcontent = edtContent.text.toString()
+//            2. 텍스트 뷰에 알아낸 내용을 세팅 -> apahgoens sodyddmf TXT의 속성에 대입
+            txtCopyResult.text = inputcontent
+
+
+        }
     }
 }
